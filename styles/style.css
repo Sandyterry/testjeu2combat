@@ -1,0 +1,211 @@
+.principal{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+ 
+ .joueur1{
+    width: 50%;
+    height: 100%;
+ }
+
+ .joueur2{
+    width: 50%;
+    height: 100%;
+ }
+
+
+
+h1 {
+    color: rgb(132, 157, 236);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5%;
+    width: 100%;
+}
+
+h3{
+    display: flex;
+    justify-content: space-around;
+    color: rgb(53, 152, 239);
+}
+
+.characterej1{
+    margin-left: 15%;
+    height: 100%;
+    width: 90%;
+}
+
+.characterej2{
+    display: flex;
+    justify-content:center;
+
+    height: 100%;
+    width: 90%;
+  
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/arene9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.allcontainer1{
+    height: 100%;
+    margin-left: 7%;
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.allcontainer2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 5px;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+img:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+.cartecapacites{
+    width: 100%;
+}
+ .boutoncombat{
+    height: 100%;
+    width: 10%;
+    display:flex;
+    align-content: flex-end;
+ }
+
+ .btnCombatStart{
+    height: 20%;
+    width:100%;
+    display:flex;
+    align-content: flex-end;
+ }
+
+ .aireDeCombat{
+    display: none;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+
+}
+
+#combatGauche{
+    height: 70%;
+    width: 40%;
+    display: flex;
+
+}
+
+#combatDroite{
+    display: flex;
+    justify-content: flex-end;
+    height: 70%;
+    width: 40%;
+}
+
+.imgCombatGauche{
+    
+    height: 40%;
+    width: 40%;
+}
+.imgCombatDroite{
+    height: 35%;
+    width: 40%;
+}
+
+button{
+    border-radius: 20%;
+    background-color: rgb(53, 152, 239);
+    height: 50px;
+    width:100px;
+}
+
+.boutonControleGauche{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 10%;
+}
+
+.boutonControleDroit{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 10%;
+}
+
+.pointsdeviecontainer{
+    display: none;
+    justify-content: space-around;
+
+}
+
+.barredevieG {
+   color: rgb(53, 152, 239);
+    height: 20px;
+    width: 500px;
+    border: 3px solid;
+}
+
+.barredevieD {
+    color: rgb(53, 152, 239);
+    height: 20px;
+    width: 500px;
+    border: 3px solid;
+}
+
+h2{
+    color: rgb(53, 152, 239);
+}
+
+.remplissagevieG{
+    height: 20px;
+    width: 500px;
+    background-color: aliceblue;
+}
+
+.remplissagevieD{
+    height: 20px;
+    width: 500px;
+    background-color: aliceblue;
+}
+
+.btnAttaqueGauche{
+
+    background-image:url(../images/fond\ bleu.jpg);
+    color:aliceblue ;
+}
+
+.title{
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00, 2px 2px 0px rgba(27,90,206,0);
+color: #163D56;
+background-image: url(../images/fond-espace-poussiere-etoiles.avif);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+width: 99%;
+}
+
+.choixcharacter{
+    
+    color: #FFFFFF;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+}
