@@ -1,35 +1,31 @@
-// let data ={
+let data ={
 
-//     "Archer" :{"Nombre de point de vie" : "30" , "Points d'Attaque" : "3", "Point Défense" : "3", "Attaque Spéciale" : "Flèche Empoisonée", "Description" : "Inflige les dégats d'attaques, plus un point de dégat à chaque tour pendant 2tours", "Points d'Attaque Spécial": "3 + 1 + 1 "},
+    "archerj1" :{ Nom: "Archer" , Pointsdevie : "30" , PointsdAttaque : "3", PointsDefense : "3", AttaqueSpciale : "Flèche Empoisonée", Description : "Inflige les dégats d'attaques, plus un point de dégat à chaque tour pendant 2tours", PointsAttaqueSpécial: "3 + 1 + 1 "},
 
-//     "Guerrier" :{"Nombre de point de vie" : "30" , "Points d'Attaque" : "5", "Point Défense" : "4", "Attaque Spéciale" : "Super Force", "Description" : "Inflige les dégats d'attaques plus importants", "Points d'Attaque Spécial": "7"},
+    "guerrierj1" :{ Nom: "Guerrier" , Pointsdevie : "30" , PointsdAttaque : "5", PointsDefense : "4", AttaqueSpeciale : "Super Force", Description : "Inflige les dégats d'attaques plus importants", PointsAttaqueSpécial: "7"},
 
-//     "Mage" :{"Nombre de point de vie" : "30" , "Points d'Attaque" : "5", "Point Défense" : "2", "Attaque Spéciale" : "Sort de paralysie", "Description" : "Empeche le joueur d'attaquer au prochain tour", "Points d'Attaque Spécial": "5 pour chaque tour"},
+    "magej1" :{Nom: "Mage" , Pointsdevie : "30" , PointsdAttaque : "5", PointsDefense : "2", AttaqueSpeciale : "Sort de paralysie", Description : "Empeche le joueur d'attaquer au prochain tour", "Points d'Attaque Spécial": "5 pour chaque tour"},
 
-//     "Prêtre" :{"Nombre de point de vie" : "30" , "Points d'Attaque" : "4", "Point Défense" : "3", "Attaque Spéciale" : "Autoguérison", "Description" : "Récupère 1 point de vie par tour pendant 2 tours", "Points de Défense Spécial":"3 puis  + 1 puis + 1"},
+    "pretrej1" :{Nom: "Prêtre" , Pointsdevie : "30" , PointsdAttaque : "4", PointsDefense : "3", AttaqueSpeciale : "Autoguérison", Description : "Récupère 1 point de vie par tour pendant 2 tours", PointsDefenceSpéciale:"3 puis  + 1 puis + 1"},
 
-//     "Prêtresse" :{"Nombre de point de vie" : "30" , "Points d'Attaque" : "4", "Point Défense" : "3", "Attaque Spéciale" : "Autoguérison", "Description" : "Récupère 1 point de vie par tour pendant 2 tours", "Points de Défense Spécial":"3 puis  + 1 puis + 1"},
+    "pretrej2" :{Nom: "Prêtresse" , Pointsdevie : "30" , PointsdAttaque : "4", PointsDefense : "3", AttaqueSpeciale: "Autoguérison", Description : "Récupère 1 point de vie par tour pendant 2 tours", PointsDefenseSpeciale:"3 puis  + 1 puis + 1"},
 
-//     "Guerrière" :{"Nombre de point de vie" : "30" , "Points d'Attaque" : "5", "Point Défense" : "4", "Attaque Spéciale" : "Super Force", "Description" : "Inflige les dégats d'attaques plus importants", "Points d'Attaque Spécial": "7"}
-// }
+    "guerrierj2" :{Nom:"Guerrière" , Pointsdevie : "30" , PointsdAttaque : "5", PointsDefense : "4", AttaqueSpeciale : "Super Force", Description : "Inflige les dégats d'attaques plus importants", PointsAttaqueSpécial: "7"},
 
-// variable pour stocker le chemin de l'image
+    "magej2" :{Nom: "Mage" , Pointsdevie : "30" , PointsdAttaque : "5", PointsDefense : "2", AttaqueSpeciale : "Sort de paralysie" , Description : "Empeche le joueur d'attaquer au prochain tour", PointsAttaqueSpécial: "5 pour chaque tour"},
+    
+    "archerj2" : { Nom: "Archer" , Pointsdevie : "30" , PointsdAttaque : "3", PointsDefense : "3", AttaqueSpeciale :  "Flèche Empoisonée", Description : "Inflige les dégats d'attaques, plus un point de dégat à chaque tour pendant 2tours", PointsAttaqueSpécial: "3 + 1 + 1 "},
+}
+
+// variable pour afficahge de l'image
 let imageSelectionnee1 = "";
 let imageSelectionnee2 = ""
 
-// let classePersonnage = ""
 
 function selectionnerPersonnage(personnage) {
     // // Affiche l'ID du personnage sélectionné pour déboguer
     // alert(personnage);
-// let cheminImage = 'images/' + personnage + '.jpg';
-      // stocker le chemin de l'image
-    //   if(personnage.includes('j1')){
-    //   imageSelectionnee1 = cheminImage;}
 
-    //   else if (personnage.includes('j2')){
-    //     imageSelectionnee2 = cheminImage;
-    //   }
 
     // Masquer tous les autres personnages
     let tousLesPersonnages = document.querySelectorAll('.allcontainer1 > div');
@@ -41,7 +37,7 @@ function selectionnerPersonnage(personnage) {
     let personnageSelectionne = document.querySelector('.' + personnage);
     personnageSelectionne.style.display = 'block';
 
-    
+    imageSelectionnee1=personnage
 }
 
 
@@ -50,8 +46,7 @@ function selectionnerPersonnage2(personnage) {
     // // Affiche l'ID du personnage sélectionné pour déboguer
     // alert(personnage);
 
-    // stocker le chemin de l'image
-    // imageSelectionnee2 = cheminImage2;
+ 
 
     // Masquer tous les autres personnages
     let tousLesPersonnages = document.querySelectorAll('.allcontainer2 > div');
@@ -62,64 +57,91 @@ function selectionnerPersonnage2(personnage) {
     // Afficher le personnage sélectionné
     let personnageSelectionne = document.querySelector('.' + personnage);
     personnageSelectionne.style.display = 'block';
+
+    imageSelectionnee2=personnage
 }
 
-// function afficherImagePlusTardJ1() {
-//     if (imageSelectionnee1){
 
-//         // creer un element d'image
-//         let = image1 = document.createElement('img');
-//         image.src = imageSelectionnee1;
 
-// // ajoutez l'iamge au conteneur de reception aire de combat
-
-//         let conteneurImage1 = document.getElementById('combatGauche');
-
-//         conteneurImage1.innerHTML = ''; 
-
-//         // effacer le contenu precedent
-
-//         conteneurImage1.appendChild(image1)
-
-//     }
-// }
-
-// function afficherImagePlusTardJ2() {
-//     if (imageSelectionnee2){
-
-//         // creer un element d'image
-//         let = image2 = document.createElement('img');
-//         image2.src = imageSelectionnee2;
-
-// // ajoutez l'iamge au conteneur de reception aire de combat
-
-//         let conteneurImage2 = document.getElementById('combatDroite');
-
-//         conteneurImage2.innerHTML = ''; 
-
-//         // effacer le contenu precedent
-
-//         conteneurImage2.appendChild(image2)
-
-//     }
-// }
-
+// variable défini pour affichage de l'aire de combat
 
 const choixcharacter = document.querySelector('.choixcharacter')
 const btnCombatStart = document.querySelector('.btnCombatStart');
 const principal = document.querySelector('.principal');
 const aireDeCombat = document.querySelector('.aireDeCombat');
-const pointsdeviecontainer= document.querySelector('.pointsdeviecontainer')
+const pointsdeviecontainer= document.querySelector('.pointsdeviecontainer');
+
+// const nomPersoJ1 =document.querySelector('.nomPersoJ1');
+// const ptVieJ1 = document.querySelector('.ptVieJ1');
+// const ptAttqJ1 = document.querySelector('.ptAttqJ1');
+// const ptDefJ1 = document.querySelector('.ptDefJ1');
+// const attaqSpeJ1 = document.querySelector('.attaqSpeJ1');
+// const descriptionJ1= document.querySelector('.descriptionJ1');
+// const ptAttqSpeJ1 = document.querySelector('.ptAttqSpeJ1');
+
+// const nomPersoJ2 = document.querySelector('.nomPersoJ2');
+// const ptVieJ2 = document.querySelector('.ptVieJ2');
+// const ptAttqJ2 = document.querySelector('.ptAttqJ2');
+// const ptDefJ2 = document.querySelector('.ptDefJ2');
+// const attaqSpeJ2 = document.querySelector('.attaqSpeJ2');
+// const descriptionJ2= document.querySelector('.descriptionJ2');
+// const ptAttqSpeJ2 = document.querySelector('.ptAttqSpeJ2');
+
+const cartecapacitesG = document.querySelector('.cartecapacitesG');
+// Evenement au clic du bouton demarrer combat
 
 btnCombatStart.addEventListener('click', () => {
     principal.style.display = "none";
     choixcharacter.style.display = "none";
     aireDeCombat.style.display = "flex";
     pointsdeviecontainer.style.display = "flex";
-    afficherImagePlusTard();
+
+// Affichage du joueur selectionner dans l'aire de combat
+
+    if (imageSelectionnee1 === 'archerj1'){
+        document.querySelector(".imgCombatGauche").src="../images/archerfem.jpg"};
+    
+    if(imageSelectionnee1 === 'guerrierj1'){
+        document.querySelector(".imgCombatGauche").src="../images/guerrier.jpg"}
+
+    if(imageSelectionnee1 === 'magej1'){
+        document.querySelector(".imgCombatGauche").src="../images/mage fem.jpg"}
+    
+    if(imageSelectionnee1 === 'pretrej1'){
+        document.querySelector(".imgCombatGauche").src="../images/pretre.jpg"}
+
+    if(imageSelectionnee2 === 'guerrierj2'){
+        document.querySelector(".imgCombatDroite").src="../images/guerriere.jpg"}
+
+    if(imageSelectionnee2 === 'archerj2'){
+        document.querySelector(".imgCombatDroite").src="../images/archer.jpg"}
+
+    if(imageSelectionnee2 === 'magej2'){
+        document.querySelector(".imgCombatDroite").src="../images/mage hom.jpg"}
+
+    if(imageSelectionnee2 === 'pretrej2'){
+        document.querySelector(".imgCombatDroite").src="../images/pretresse.jpg"}
+
+    cartecapacitesG.innerHTML= '<h1 class="nomPersoJ1">'+personnage.nom+'</h1> <h4 class="ptVieJ1">Nombre de point de vie:'+Pointsdevie+'</h4><h4 class="ptAttqJ1">Points d\'Attaque :'+PointsdAttaque+'</h4><h4 class="ptDefJ1">Point Défense : '+PointsDefense+'</h4><h4 class="attaqSpeJ1">Attaque Spéciale : '+AttaqueSpeciale+'</h4><h4 class="descriptionJ1">'+Description+'</h4><h4 class="ptAttqSpeJ1">Points d\'Attaque Spécial:'+PointsAttaqueSpécial+' </h4>'
+    
+    // cartecapacitesD.innerHTML=
+
 });
 
-// bouton combat gauche
+// Constante  pour affichage de la carte du personnage
+
+
+
+
+// concatainer
+    // console.log(`${nom} ${prenom} a ${age} ans et aime ${passion}` )
+
+
+
+
+
+
+// Boutons combat gauche
 
 const btnAttaqueGauche = document.querySelector('.btnAttaqueGauche');
 
@@ -134,7 +156,7 @@ btnCapaGauche.addEventListener('click', () => {
     console.log('le joueur gauche a lancé sa capacité spéciale')
 })
 
-// bouton combat droite
+// Boutons combat droite
 
 const btnAttaqueDroite = document.querySelector('.btnAttaqueDroite');
 
@@ -150,14 +172,4 @@ btnCapaDroite.addEventListener('click', () => {
     console.log('le joueur droit a lancé sa capacité spéciale')
 })
 
-// Affichage des personnages selectionnés dans l'aire de combat.
-
-// const selectPlayer1 = document.querySelector('.selectionPlayer1')
-// const selectPlayer2 = document.querySelector('.selectionPlayer2')
-
-// au moment de selectionner les sources, je les mets dans la variable selectplayer1 et selectplayer2
-
-// au moment de lancer le combat je selectionne les sources des images
-
-// fonction pour afficher l'image selectionnée plus tard
 

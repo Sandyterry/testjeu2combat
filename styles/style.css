@@ -54,6 +54,7 @@ body {
     background-image: url(../images/arene9.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 
 .allcontainer1{
@@ -108,8 +109,8 @@ img:hover{
 }
 
 #combatGauche{
-    height: 70%;
-    width: 40%;
+    height: 100%;
+    width: 50%;
     display: flex;
 
 }
@@ -117,17 +118,17 @@ img:hover{
 #combatDroite{
     display: flex;
     justify-content: flex-end;
-    height: 70%;
-    width: 40%;
+    height: 100%;
+    width: 50%;
 }
 
-.imgCombatGauche{
+.imagePersonnageSelectionne1{
     
     height: 40%;
     width: 40%;
 }
-.imgCombatDroite{
-    height: 35%;
+.imagePersonnageSelectione2{
+    height: 40%;
     width: 40%;
 }
 
@@ -190,7 +191,7 @@ h2{
 
 .btnAttaqueGauche{
 
-    background-image:url(../images/fond\ bleu.jpg);
+   
     color:aliceblue ;
 }
 
@@ -208,4 +209,45 @@ width: 99%;
     
     color: #FFFFFF;
     text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+}
+
+.cartecapacitesD{
+    height: 50%;
+    width: 35%;
+    text-align: center;
+    color: rgb(132, 157, 236);
+    border: 5px solid rgb(132, 157, 236);
+    height: 600px;
+    border-radius: 25%;
+    padding: 10px;
+    background-image: url(../images/bg.jpg);
+
+}
+
+.cartecapacitesG{
+    height: 50%;
+    width: 35%;
+    text-align: center;
+    color:rgb(132, 157, 236) ;
+    border: 5px solid rgb(132, 157, 236);
+    height: 600px;
+    border-radius: 25%;
+    margin: 10px;
+    background-image: url(../images/bg.jpg);
+}
+
+.allBtnDroite{
+display: flex;
+justify-content: space-around;
+
+}
+
+.allBtnGauche{
+    display: flex;
+    justify-content: space-around;
+    font-size: larger;
+    }
+
+.btnCombatStart{
+    font-size: larger;
 }
